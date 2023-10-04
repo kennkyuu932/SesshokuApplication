@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">SesshokuApplication</string>
+    <string name="add_data">add data</string>
+    <string name="start_psi">start psi</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="name">Name</string>
+    <string name="read_csv">read_csv</string>
+    <string name="date_yyyy_mm_dd">date(YYYY/MM/DD)</string>
+    <string name="time_hh_mm">time(HH:MM)</string>
 </resources>
