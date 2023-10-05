@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RoomActivity">
+    tools:context=".room.RoomActivity">
 
     <Button
         android:id="@+id/read_csv"
@@ -18,7 +18,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/edit_date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:autofillHints=""
@@ -30,10 +30,10 @@
         app:layout_constraintHorizontal_bias="0.263"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_date"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints,TextFields" />
 
     <EditText
-        android:id="@+id/editTextText2"
+        android:id="@+id/edit_time"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="44dp"
@@ -42,13 +42,13 @@
         android:hint="@string/time"
         android:inputType="text"
         android:minHeight="48dp"
-        app:layout_constraintEnd_toEndOf="@+id/editTextText"
+        app:layout_constraintEnd_toEndOf="@+id/edit_date"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/editTextText"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText" />
+        app:layout_constraintStart_toStartOf="@+id/edit_date"
+        app:layout_constraintTop_toBottomOf="@+id/edit_date" />
 
     <EditText
-        android:id="@+id/editTextText3"
+        android:id="@+id/edit_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
@@ -57,10 +57,10 @@
         android:hint="@string/name"
         android:inputType="text"
         android:minHeight="48dp"
-        app:layout_constraintEnd_toEndOf="@+id/editTextText2"
+        app:layout_constraintEnd_toEndOf="@+id/edit_time"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/editTextText2"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText2"
+        app:layout_constraintStart_toStartOf="@+id/edit_time"
+        app:layout_constraintTop_toBottomOf="@+id/edit_time"
         tools:ignore="DuplicateSpeakableTextCheck" />
 
     <TextView
@@ -69,9 +69,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="76dp"
         android:text="@string/date_yyyy_mm_dd"
-        app:layout_constraintEnd_toEndOf="@+id/editTextText"
+        app:layout_constraintEnd_toEndOf="@+id/edit_date"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/editTextText"
+        app:layout_constraintStart_toStartOf="@+id/edit_date"
         app:layout_constraintTop_toBottomOf="@+id/read_csv" />
 
     <TextView
@@ -79,11 +79,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/time_hh_mm"
-        app:layout_constraintBottom_toTopOf="@+id/editTextText2"
-        app:layout_constraintEnd_toEndOf="@+id/editTextText2"
+        app:layout_constraintBottom_toTopOf="@+id/edit_time"
+        app:layout_constraintEnd_toEndOf="@+id/edit_time"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/editTextText2"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText"
+        app:layout_constraintStart_toStartOf="@+id/edit_time"
+        app:layout_constraintTop_toBottomOf="@+id/edit_date"
         app:layout_constraintVertical_bias="1.0" />
 
     <TextView
@@ -91,11 +91,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/name"
-        app:layout_constraintBottom_toTopOf="@+id/editTextText3"
-        app:layout_constraintEnd_toEndOf="@+id/editTextText3"
+        app:layout_constraintBottom_toTopOf="@+id/edit_name"
+        app:layout_constraintEnd_toEndOf="@+id/edit_name"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/editTextText3"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText2"
+        app:layout_constraintStart_toStartOf="@+id/edit_name"
+        app:layout_constraintTop_toBottomOf="@+id/edit_time"
         app:layout_constraintVertical_bias="1.0" />
 
     <Button
@@ -104,9 +104,9 @@
         android:layout_height="wrap_content"
         android:text="@string/add_data"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/editTextText3"
+        app:layout_constraintEnd_toEndOf="@+id/edit_name"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/editTextText3"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText3"
+        app:layout_constraintStart_toStartOf="@+id/edit_name"
+        app:layout_constraintTop_toBottomOf="@+id/edit_name"
         app:layout_constraintVertical_bias="0.208" />
 </androidx.constraintlayout.widget.ConstraintLayout>
